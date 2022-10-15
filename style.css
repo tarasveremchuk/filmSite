@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('images/main/kruty2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+}
+header{
+    color:rgb(184, 179, 179);
+    display: flex;
+    max-height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#iconbar{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+#iconbar:hover{
+    color: red;
+}
+.logo{
+margin-left: 60px;
+margin-top: 50px;
+
+}
+.logo img{
+    height: 7vh;
+}
+.logo h3{
+    color:red;
+    font-size: 25px;
+    margin-top: -35px;
+
+    margin-left: 50px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: rgb(227, 238, 227);
+}
+.nav ul li a:hover{
+    color: red;
+    font-weight: bolder;
+}
+.reg{
+    cursor:pointer;
+    color:red;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.reg a{
+    padding: 10px 30px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.reg a:hover{
+    background-color: black;
+    color: red;
+}
+.reg i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.reg h4{
+    border-radius: 40px;
+    background: red;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.reg i{
+    padding: 0px 14px;
+}
+.reg h4:hover{
+    color:red;
+    background: black;
+}
+
+
+.mainpage{
+    position: absolute;
+    color:white;
+   margin-top: 100px;
+   margin-left: 100px;
+}
+.inside-mainpage{
+    line-height:2;
+}
+.inside-mainpage h1{
+    font-size: 40px;
+}
+.inside-mainpage p{
+    font-size: 17px;
+}
+span{
+    color: red;
+    font-weight: bold;
+
+}
+.films1{
+height: 2px;
+background-color:red;
+width: 12%;
+margin-left: 0px;
+margin-top: 0px;
+position: absolute;
+}
+
+.btnWatch{
+    margin-top: 30px;
+}
+.btnWatch a{
+    background-color: red;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.btnWatch a:hover{
+    background: black;
+    color: red;
+}
+
+.btnWatch i{
+    color:black;
+    padding: 0px 10px;
+}
+.btnWatch i:hover{
+    color: white;
+}
+.poster{
+    margin-top: 130px;
+    margin-right: 150px;
+}
+.poster img{
+    height:320px;
+    float: right;
+    border-radius: 10px;
+}
+.popular-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    margin-top: 500px;
+    align-items: center;
+    background-position: center;
+}
+.popular-movies h1{
+    font-size: 20px;
+    color:red;
+    
+}
+.popular-container{
+    padding: 10px 0px;
+}
+.popular-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-inside img{
+    max-height: 122px;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 500ms ease-in-out;
+}
+.popular-inside img:hover{
+    transform: scale(1.2);
+}
+.heading1{
+    color: white;
+    line-height: 1.5;
+}
+.heading1 h4{
+    font-size: 15px;
+}
+.heading1 h6{
+    font-size: 12px;
+}
+.btnWatch2{
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.btnWatch2 a{
+    font-size: 13px;
+    text-decoration: none;
+    background: red;
+    padding: 7px 7px;
+    border-radius: 10%;
+    color: white;
+
+}
+.newest-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 850px;
+}
+.newest-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.newest-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newest-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.newest-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.newest-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.mark{
+    background: red;
+    border-radius:20px;
+    position:absolute;
+    padding: 10px 10px;
+    color: white;
+    margin-top: -80px;
+    margin-left: 120px;
+    font-weight: bolder;
+}
+
+
+
+.comedy-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1300px;
+}
+.comedy-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.comedy-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comedy-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.comedy-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.comedy-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.fantasy-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1750px;
+}
+.fantasy-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.fantasy-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fantasy-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.fantasy-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.fantasy-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tollywood-movies{
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 1300px;
+}
+.tollywood-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.tollywood-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tollywood-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+}
+.tollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.tollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.adventure-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 2200px;
+}
+.adventure-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.adventure-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adventure-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+}
+.adventure-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.adventure-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.series-movies{
+    position: absolute;
+    min-width: 1500px;
+    width:100%;
+    max-width: 2000px;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+    margin-top: 2650px;
+}
+.series-movies h1{
+    font-size: 20px;
+    color:red;
+}
+.series-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.series-inside h3{
+    font-size: 15px;
+    font-weight:500;
+    margin-top: 6px;
+   
+}
+.series-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.series-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.filmtop{
+
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background: black;
+    color: white;
+    margin-top: 3100px;
+}
+.films-movies{
+    padding: 10px 170px;
+    line-height: 1.9;
+}
+.films-movies h1{
+    color:red;
+}
+.films-movies p{
+    font-size: 25px;
+}
+.films{
+    height: 2px;
+    background-color: white;
+    width: 7%;
+    margin-left: 170px;
+    position: absolute;
+}
+.films-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inside-films img{
+    padding: 10px 0px;
+    height: 350px;
+    border-radius: 50px;
+}
+.heading2 p{
+    font-size: 15px;   
+}
+.like{
+    font-size: 15px;
+    float: right;
+    margin-top: -56px;
+}
+.Watchbtn3{
+    position:absolute;
+    height:30%;
+    background-color: black;
+    width: 100%;
+    margin-top: 3700px;
+    text-align: center;
+}
+.Watchbtn3 a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background: red;
+    color: black;
+    font-weight: 700;
+    border-radius: 40px;
+}
+.Watchbtn3 i{
+    padding:0px 4px;
+    font-size: 19px;
+}
+.footer{
+    position: absolute;
+    margin-top: 3860px;
+    height: 20vh;
+    color: white;
+    background:#141414;
+    width: 100%;
+}
+
+.logopart img{
+    height:7vh;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.logopart h1{
+    color:red;
+font-size: 25px;
+margin-top: 40px;
+margin-left: 120px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.socials i{
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color:red;
+}
+.btn4{
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.btn4 a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: black;
+    background: red;
+    border-radius: 30px;
+}
+
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50px;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+}
+.scroll i{
+    color: black;
+}
+.small{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+.small:focus{
+    outline: none;
+}
+
+@media(max-width:360px)
+{
+    .nav ul{
+        display: none;
+    }
+    .small {
+        display: block; 
+    }
+
+
+}
